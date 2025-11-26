@@ -152,6 +152,70 @@ h1, h2, h3, h4, p {
   font-weight: 700;
 }
 
+.topSelling {
+  height: auto;
+  text-align: center;
+  padding: 40px 40px 40px 40px;
+  margin: 40px 40px 40px 40px ;
+
+}
+.topHead{
+  margin-bottom: 100px;
+  font-size:xx-large;
+
+}
+
+.topPhoto {
+  text-align: center; 
+  font-size: 30px; 
+  display: flex;
+  justify-content: center;
+  gap: 70px;  
+  padding-bottom: 20px;
+  
+}
+.topInside,
+.topInside1,
+.topInside2{
+  padding: 40px 20px 40px 20px;
+  background-color: #ffffff;  
+  border-radius: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform 0.4s ease;
+  width: 260px;
+}
+.topInside:hover,
+.topInside1:hover,
+.topInside2:hover{
+  transform:scale(1.45);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 50px;
+  z-index: 10; 
+  transition: transform 0.4s ease, margin 0.4s ease;
+
+}
+
+.photo1 {
+  height: 200px;
+  width: auto;
+  background-color: #dbd1d1;
+  border-radius: 20px;
+} 
+
+.photo2 {
+  height: 200px;
+  width: auto;
+  background-color: #dbd1d1;
+  border-radius: 20px;
+} 
+
+.photo3 {
+  height: 200px;
+  width: auto;
+  background-color: #dbd1d1;
+  border-radius: 20px;
+} 
+
 .info-box {
   flex: 1;
   background-color: white;
