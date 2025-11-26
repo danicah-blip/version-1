@@ -1,35 +1,43 @@
-// Sample menu items
-const menu = [
-    { name: "Cheesy Burger", description: "Juicy beef patty with melted cheese, lettuce, tomato, and special sauce." },
-    { name: "Spaghetti Carbonara", description: "Classic creamy pasta with bacon and parmesan." },
-    { name: "Adobo Flakes Silog", description: "Crispy adobo flakes served with garlic rice and fried egg." },
-    { name: "Halo-Halo Special", description: "Filipino dessert with shaved ice, sweet beans, jellies, and ice cream." },
-    { name: "Pork Sinigang", description: "Savory and sour tamarind-based soup with tender pork and vegetables." }
-];
-
-// Function to load menu items
-function loadMenu() {
-    const container = document.getElementById("menuItems");
-    container.innerHTML = ""; // Clear existing content
-
-    menu.forEach(item => {
-        const div = document.createElement("div");
-        div.className = "menu-item";
-        div.innerHTML = `
-            <h3>${item.name}</h3>
-            <p>${item.description}</p>
-        `;
-        container.appendChild(div);
+document.querySelector(".logo img").addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
-}
+});
 
-// Button to scroll to menu
-const viewMenuBtn = document.getElementById("viewMenuBtn");
-if (viewMenuBtn) {
-    viewMenuBtn.addEventListener("click", () => {
-        document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+const navLinks = document.querySelectorAll(".nav a");
+const headerHeight = document.querySelector(".header").offsetHeight;
+
+navLinks.forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        const target = document.getElementById(targetId);
+        const targetPosition = target.offsetTop - headerHeight - 10;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
     });
-}
+});
 
-// Load menu on page load
-window.addEventListener("DOMContentLoaded", loadMenu);
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - headerHeight - 20;
+
+        if (window.pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
