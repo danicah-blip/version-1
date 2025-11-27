@@ -98,7 +98,7 @@ h1, h2, h3, h4, p {
 }
 
 .about {
-  padding: 40px 40px 0px 40px;
+  padding: 40px 50px 0px 40px;
   max-width: 1200px;
   margin: 0 auto;
   height: auto;
@@ -106,6 +106,10 @@ h1, h2, h3, h4, p {
   flex-direction: column;
   justify-content: flex-start;
   font-size: 18px;
+}
+.center-title{
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 .about-container {
   display: flex;
@@ -140,6 +144,9 @@ h1, h2, h3, h4, p {
 .about-text strong {
   color: #d31717; /* Accent color for bold text */
   font-weight: 700;
+}
+.info-box{
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .topSelling {
@@ -291,6 +298,8 @@ h1, h2, h3, h4, p {
 .to-menubtn {
   background: transparent;
   color: #fff;
+  font-size: 1.7rem;
+  border-radius: 8px;
 }
 
 
