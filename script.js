@@ -41,3 +41,9 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+const button = document.getElementById('to-munebtn');
+
+button.addEventListener('click', () =>{
+    window.location.href = 'menu-side.html';
+})

@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: #333;
-  background-color: #ffe6e6;
+  background-color: #ffffff;
   scroll-behavior: smooth;
 }
 
@@ -74,17 +74,6 @@ h1, h2, h3, h4, p {
   background-position: center;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
-  z-index: 0;
-}
-
 .greet {
   position: relative;
   z-index: 1;
@@ -109,7 +98,7 @@ h1, h2, h3, h4, p {
 }
 
 .about {
-  padding: 40px 40px 80px 40px;
+  padding: 40px 40px 0px 40px;
   max-width: 1200px;
   margin: 0 auto;
   height: auto;
@@ -157,12 +146,15 @@ h1, h2, h3, h4, p {
   height: auto;
   text-align: center;
   padding: 40px 40px 40px 40px;
-  margin: 40px 40px 40px 40px ;
-
+  background: linear-gradient(135deg, #d31717 0%, #000000 100%);
+  clip-path: ellipse(100% 90% at 50% 100%);
+  padding-top: 100px;
+  margin-bottom: 10px;
 }
 .topHead{
-  margin-bottom: 250px;
+  margin-bottom: 260px;
   font-size:xx-large;
+  color: white;
 
 }
 
@@ -197,8 +189,8 @@ h1, h2, h3, h4, p {
 .topInside2:hover{
   transform:scale(1);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  margin: 0 20px;
-  z-index: 10; 
+  margin: 0 10px;
+  z-index: 5; 
   transition: transform 0.4s ease, margin 0.4s ease;
 
 }
@@ -243,114 +235,64 @@ h1, h2, h3, h4, p {
   transform: scale(1.05);
   object-position: 50%;
   object-position: 0px 1.2px
-} 
-
-.info-box {
-  flex: 1;
-  background-color: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border: 2px solid #d31717;
-  min-width: 250px;
 }
 
-.info-box h3 {
-  color: #d31717;
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
+.linecut {
+  padding: auto;
+  background: linear-gradient(135deg, #d31717 0%, #000000 100%);
+  margin-top: 20px;
 }
 
-.info-item {
-  margin-bottom: 15px;
-  font-size: 16px;
+.linecutuno {
+  padding: auto;
+  background: linear-gradient(135deg, #d31717 0%, #000000 100%);
 }
 
-.imageSlider{
-  max-width: 800px;
-  margin: 0 auto;
-  height: auto;
+.menu-nav {
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  font-size: 18px;
-}
-
-.center-title {
-  text-align: center;
-  font-size: 42px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 100px;
+  overflow: hidden;
   margin-bottom: 30px;
-  color: rgb(90, 2, 2);
-  font-weight: 700;
+   
+  /*Text*/
+  font-size: 100px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
 }
 
-.menu-category {
-  margin: 50px auto;
-  width: 95%;
-  max-width: 1200px;
-  padding: 10px 10px;
-  padding-left: 50px;
-  padding-right: 50 px;
-  border-radius: 20px;
-  background-color: #f9ecec;
-  box-shadow: 0 4px 10px rgba(139, 0, 0, 0.1);
-  transition: all 0.5s ease;
+.menu-nav::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: 100%;
+  background-image: url('assets/woodtray (1).png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: 
+    background-image 0.3s ease-in-out,
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  z-index: -1;
 }
 
-.menu-category:hover {
-  box-shadow: 0 10px 20px rgba(139, 0, 0, 0.25);
+.menu-nav:hover::before{
+  background-image: url('assets/woodtrayv2\ \(1\).png');
+  transform: scale(1);
+  opacity: 1;
 }
 
-.tray-section-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 25px;
-  color: rgb(90, 2, 2);
+.to-menubtn {
+  background: transparent;
+  color: #fff;
 }
 
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.menu-item {
-  border: 1px solid #dbd1d1;
-  padding: 25px;
-  border-radius: 12px;
-  background: white;
-  transition: all 0.4s ease;
-}
-
-.menu-item:hover {
-  background-color: rgba(255, 215, 0, 0.15);
-  border-color: rgb(90, 2, 2);
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-
-.menu-item h4 {
-  margin-bottom: 10px;
-  color: rgb(90, 2, 2);
-  font-size: 20px;
-}
-
-.menu-item p {
-  font-weight: 600;
-  color: #555;
-  font-size: 18px;
-}
-
-.tray-note {
-  text-align: center;
-  margin-top: 20px;
-  font-style: italic;
-  color: #444;
-  font-size: 16px;
-}
 
 /* FOOTER SECTION */
 .footer {

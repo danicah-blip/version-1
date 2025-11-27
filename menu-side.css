@@ -1,0 +1,251 @@
+.header {
+  background: linear-gradient(135deg, #d31717 0%, #000000 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  height: 80px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  opacity: 1;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.nav a:hover {
+  color: #f1f1b1;
+  transform: translateY(-5px);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.greet {
+  position: relative;
+  z-index: 1;
+  padding: 60px 50px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 42px;
+  max-width: 100%;
+}
+
+.uns {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #fff;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+.menu-category {
+  margin: 50px auto;
+  width: 95%;
+  max-width: 1200px;
+  padding: 10px 10px;
+  padding-left: 50px;
+  padding-right: 50 px;
+  border-radius: 20px;
+  background-color: #f9ecec;
+  box-shadow: 0 4px 10px rgba(139, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.menu-category:hover {
+  box-shadow: 0 10px 20px rgba(139, 0, 0, 0.25);
+}
+
+.tray-section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: rgb(90, 2, 2);
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  border: 1px solid #dbd1d1;
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.4s ease;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 215, 0, 0.15);
+  border-color: rgb(90, 2, 2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h4 {
+  margin-bottom: 10px;
+  color: rgb(90, 2, 2);
+  font-size: 20px;
+}
+
+.menu-item p {
+  font-weight: 600;
+  color: #555;
+  font-size: 18px;
+}
+
+.tray-note {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #444;
+  font-size: 16px;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background: linear-gradient(135deg, #d31717 0%, #000000 100%);
+  height: auto;
+  padding-bottom: auto;
+  color: #ffffff;
+
+  overflow: hidden;
+  border-top-left-radius: 100px;
+  clip-path: ellipse(150% 120% at 100% 120%);
+
+  /* REMOVE flex from parent because it forces H1 to align in row */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+/* Title styling */
+.footer-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  padding-left: 65px;
+  padding-top: 90px;
+}
+
+/* THIS becomes the flexbox for the 3 sections */
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex: 1; /* so it fills the footer height */
+}
+
+.address {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contact section */
+.contact {
+  padding: auto;
+  text-align: left;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+/* Logo section */
+.footerLogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLogo img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Icon links row */
+.iconLinks {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: auto;
+}
+
+.facebook-link img {
+  width: 65px;
+  height: auto;
+}
+
+.foodpanda-link img {
+  width: 65px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.instagram-link img {
+  width: 65px;
+  height: auto;
+}
