@@ -19,8 +19,8 @@
 }
 
 .logo img {
-  width: 80px;
-  height: auto;
+  width: auto;
+  height: 65px;
   margin-right: 15px;
   background: none;
   padding: 0;
@@ -170,14 +170,15 @@ body {
   color: #ffffff;
 
   overflow: hidden;
-  border-top-left-radius: 100px;
-  clip-path: ellipse(150% 120% at 100% 120%);
+  border-top-left-radius: 10px;
+  clip-path: ellipse(200% 120% at 120% 120%);
 
   /* REMOVE flex from parent because it forces H1 to align in row */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  
 
   padding-top: 20px;
 }
@@ -196,19 +197,36 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  flex: 1; /* so it fills the footer height */
+  flex: 1;
+}
+
+.blanksec { 
+  margin: 20px 230px 20px 230px;
 }
 
 .address {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.addressbtn {
+  background: #ffffff;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+  width: auto;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+}
+
 /* Contact section */
 .contact {
-  padding: auto;
+  padding: 0;
+  border: none;
   text-align: left;
   font-size: 25px;
   margin-left: 20px;
+  margin-top: 30px;
+  background-color: #d31717;
 }
 
 /* Logo section */
@@ -234,18 +252,26 @@ body {
   padding-bottom: auto;
 }
 
+.location-link img {
+  width: 80px;
+  height: auto;
+  margin-top: 63px;
+}
+
 .facebook-link img {
   width: 65px;
   height: auto;
+  margin-top: 50px;
 }
 
 .foodpanda-link img {
   width: 65px;
   height: auto;
-  margin-top: 5px;
+  margin-top: 55px;
 }
 
 .instagram-link img {
   width: 65px;
   height: auto;
+  margin-top: 55px;
 }
