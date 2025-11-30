@@ -125,14 +125,13 @@ h1, h2, h3, h4, p, .uns {
   align-items: flex-start;
   justify-content: space-between;
     }
-
-    /* Updated Design for About Text */
+ 
 .about-text {
   flex: 2;
   font-size: 19px;
   line-height: 1.8;
   padding-left: 25px;
-  border-left: 5px solid #d31717; /* Accent border */
+  border-left: 5px solid #d31717;
   color: #444;
 }
 
@@ -141,7 +140,7 @@ h1, h2, h3, h4, p, .uns {
 }
 
 .about-text strong {
-  color: #d31717; /* Accent color for bold text */
+  color: #d31717;
   font-weight: 700;
 }
 
@@ -156,8 +155,9 @@ h1, h2, h3, h4, p, .uns {
 }
 .topHead{
   margin-bottom: 260px;
-  font-size: 35px;
+  font-size: 55px;
   color: white;
+  font-weight: bold;
 }
 
 .topPhoto {
@@ -295,9 +295,26 @@ h1, h2, h3, h4, p, .uns {
   opacity: 1;
 }
 
-.to-menubtn {
+.party-trays {
+  font-style:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.to-menubtn { 
   background: transparent;
   color: #fff;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.to-menubtn:hover { 
+  transform: scale(1.02);
 }
 
 
@@ -312,7 +329,6 @@ h1, h2, h3, h4, p, .uns {
   border-top-left-radius: 10px;
   clip-path: ellipse(200% 120% at 120% 120%);
 
-  /* REMOVE flex from parent because it forces H1 to align in row */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -322,7 +338,6 @@ h1, h2, h3, h4, p, .uns {
   padding-top: 20px;
 }
 
-/* Title styling */
 .footer-title {
   font-size: 2.2rem;
   margin-bottom: 10px;
@@ -330,7 +345,6 @@ h1, h2, h3, h4, p, .uns {
   padding-top: 90px;
 }
 
-/* THIS becomes the flexbox for the 3 sections */
 .footer-flex {
   display: flex;
   justify-content: space-around;
@@ -357,7 +371,6 @@ h1, h2, h3, h4, p, .uns {
   font-size: 18px;
 }
 
-/* Contact section */
 .contact {
   padding: 0;
   border: none;
@@ -368,7 +381,6 @@ h1, h2, h3, h4, p, .uns {
   background-color: #d31717;
 }
 
-/* Logo section */
 .footerLogo {
   display: flex;
   align-items: center;
@@ -383,7 +395,6 @@ h1, h2, h3, h4, p, .uns {
   margin-bottom: 20px;
 }
 
-/* Icon links row */
 .iconLinks {
   display: flex;
   gap: 50px;
