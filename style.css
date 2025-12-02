@@ -15,6 +15,7 @@ h1, h2, h3, h4, p, .uns {
   font-family: 'montserrat', sans-serif;
 }
 
+/*Header Section*/
 .header {
   background: linear-gradient(135deg, #d31717 0%, #000000 100%);
   display: flex;
@@ -65,7 +66,10 @@ h1, h2, h3, h4, p, .uns {
   transform: translateY(-5px);
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
+/*Header Section*/
 
+
+/*Greet Section*/
 .hero {
   height: 85vh;
   display: flex;
@@ -99,7 +103,10 @@ h1, h2, h3, h4, p, .uns {
   font-size: 22px;
   color: #fff;
 }
+/*Greet Section*/
 
+
+/*About Section*/
 .about {
   padding: 40px 40px 0px 40px;
   max-width: 1200px;
@@ -125,14 +132,13 @@ h1, h2, h3, h4, p, .uns {
   align-items: flex-start;
   justify-content: space-between;
     }
-
-    /* Updated Design for About Text */
+ 
 .about-text {
   flex: 2;
   font-size: 19px;
   line-height: 1.8;
   padding-left: 25px;
-  border-left: 5px solid #d31717; /* Accent border */
+  border-left: 5px solid #d31717;
   color: #444;
 }
 
@@ -141,10 +147,13 @@ h1, h2, h3, h4, p, .uns {
 }
 
 .about-text strong {
-  color: #d31717; /* Accent color for bold text */
+  color: #d31717;
   font-weight: 700;
 }
+/*About Section*/
 
+
+/*TopSelling Section*/
 .topSelling {
   height: auto;
   text-align: center;
@@ -156,8 +165,9 @@ h1, h2, h3, h4, p, .uns {
 }
 .topHead{
   margin-bottom: 260px;
-  font-size: 35px;
+  font-size: 55px;
   color: white;
+  font-weight: bold;
 }
 
 .topPhoto {
@@ -244,6 +254,30 @@ h1, h2, h3, h4, p, .uns {
   object-position: 0px 1.2px
 }
 
+.paragraph1{
+  margin-bottom: 10px;
+}
+.paragraph2{
+  font-size: 17px;
+  text-align: justify;
+}
+
+.paragraph3{
+  margin-bottom: 10px;
+}
+
+.paragraph4{
+  font-size: 17px;
+  text-align: justify;
+}
+.paragraph5{
+  margin-bottom: 10px;
+}
+.paragraph6{
+  font-size: 17px;
+  text-align: justify;
+}
+
 .linecut {
   padding: auto;
   background: linear-gradient(135deg, #d31717 0%, #000000 100%);
@@ -254,7 +288,10 @@ h1, h2, h3, h4, p, .uns {
   padding: auto;
   background: linear-gradient(135deg, #d31717 0%, #000000 100%);
 }
+/*TopSelling Section*/
 
+
+/*Menu Section*/
 .menu-nav {
   height: 90vh;
   display: flex;
@@ -295,10 +332,28 @@ h1, h2, h3, h4, p, .uns {
   opacity: 1;
 }
 
-.to-menubtn {
+.party-trays {
+  font-style:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.to-menubtn { 
   background: transparent;
   color: #fff;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.3s ease;
 }
+
+.to-menubtn:hover { 
+  transform: scale(1.02);
+}
+/*Menu Section*/
 
 
 /* FOOTER SECTION */
@@ -312,7 +367,6 @@ h1, h2, h3, h4, p, .uns {
   border-top-left-radius: 10px;
   clip-path: ellipse(200% 120% at 120% 120%);
 
-  /* REMOVE flex from parent because it forces H1 to align in row */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -322,7 +376,6 @@ h1, h2, h3, h4, p, .uns {
   padding-top: 20px;
 }
 
-/* Title styling */
 .footer-title {
   font-size: 2.2rem;
   margin-bottom: 10px;
@@ -330,7 +383,6 @@ h1, h2, h3, h4, p, .uns {
   padding-top: 90px;
 }
 
-/* THIS becomes the flexbox for the 3 sections */
 .footer-flex {
   display: flex;
   justify-content: space-around;
@@ -357,7 +409,6 @@ h1, h2, h3, h4, p, .uns {
   font-size: 18px;
 }
 
-/* Contact section */
 .contact {
   padding: 0;
   border: none;
@@ -368,7 +419,6 @@ h1, h2, h3, h4, p, .uns {
   background-color: #d31717;
 }
 
-/* Logo section */
 .footerLogo {
   display: flex;
   align-items: center;
@@ -383,7 +433,6 @@ h1, h2, h3, h4, p, .uns {
   margin-bottom: 20px;
 }
 
-/* Icon links row */
 .iconLinks {
   display: flex;
   gap: 50px;
@@ -414,26 +463,4 @@ h1, h2, h3, h4, p, .uns {
   height: auto;
   margin-top: 55px;
 }
-.paragraph1{
-  margin-bottom: 10px;
-}
-.paragraph2{
-  font-size: 17px;
-  text-align: justify;
-}
-
-.paragraph3{
-  margin-bottom: 10px;
-}
-
-.paragraph4{
-  font-size: 17px;
-  text-align: justify;
-}
-.paragraph5{
-  margin-bottom: 10px;
-}
-.paragraph6{
-  font-size: 17px;
-  text-align: justify;
-}
+/* FOOTER SECTION */
