@@ -4,7 +4,7 @@ Team members: William Gatdula,
               Ranford Aves,
               Ayessa Vicedo,
               Danicah Timbal,
-              Jhedrick Valenzuela,
+              Jhedrick Valenzuela
 
 Description: This website is designed to showcase the restaurants' menu, services, and essential information for customers. It is a fully functional website with a clean interface and responsive layout to provide users with a smooth browsing experience.
   
@@ -22,6 +22,6 @@ There are clear icons and links to our social pages (Facebook and Instagram).
 
 A simple link that takes users straight to Google Maps for directions to the restaurant.
 
-Screenshot: 
+Screenshot: https://drive.google.com/drive/folders/1vA90RHtzTU6mwTD3ryfpYXtTWV3MZ1hY?usp=sharing
 
-Run instructions:
+Run instructions: Paste https://version-1-xrh3.vercel.app on google chrome or in any browser
